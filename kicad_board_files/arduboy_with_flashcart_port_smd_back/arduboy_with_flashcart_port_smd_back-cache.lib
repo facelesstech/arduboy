@@ -1,0 +1,84 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 5v_boost_green_5v_boost_green
+#
+DEF 5v_boost_green_5v_boost_green U 0 40 Y Y 1 F N
+F0 "U" 350 250 50 V V C CNN
+F1 "5v_boost_green_5v_boost_green" 250 200 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 450 200 0 0 1 0 N
+X IN+ 1 -150 -100 100 U 50 50 1 1 I
+X IN- 2 150 -100 100 U 50 50 1 1 I
+X OUT- 3 -50 550 100 D 50 50 1 1 I
+X OUT+ 4 50 550 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push_SPDT
+#
+DEF Switch_SW_Push_SPDT SW 0 0 Y N 1 F N
+F0 "SW" 0 170 50 H V C CNN
+F1 "Switch_SW_Push_SPDT" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 0 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 100 20 0 1 0 N
+P 2 0 0 0 0 40 0 120 N
+P 2 0 1 0 -60 10 100 80 N
+X A 1 200 100 100 L 50 50 1 1 P
+X B 2 -200 0 100 R 50 50 1 1 P
+X C 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# USB_C_lipo_charger_custom_USB_C_lipo_charger_custom
+#
+DEF USB_C_lipo_charger_custom_USB_C_lipo_charger_custom U 0 40 Y Y 1 F N
+F0 "U" -900 550 50 V V C CNN
+F1 "USB_C_lipo_charger_custom_USB_C_lipo_charger_custom" -1050 500 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 900 200 0 0 1 0 N
+S -100 0 50 150 0 1 0 N
+X VCC_in 1 -200 -100 100 U 50 50 1 1 I
+X GND_in 2 150 -100 100 U 50 50 1 1 I
+X VCC_out 3 -200 1000 100 D 50 50 1 1 I
+X Batt_VCC_out 4 -100 1000 100 D 50 50 1 1 I
+X Batt_GND_out 5 50 1000 100 D 50 50 1 1 I
+X GND_out 6 150 1000 100 D 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# battery_custom_battery_custom
+#
+DEF battery_custom_battery_custom U 0 40 Y Y 1 F N
+F0 "U" 150 150 50 V V C CNN
+F1 "battery_custom_battery_custom" -200 150 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 0 100 250 0 1 0 N
+X GND 1 -50 -100 100 U 50 50 1 1 I
+X VCC 2 50 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# m3_standoffs_m3_standsoffs
+#
+DEF m3_standoffs_m3_standsoffs U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "m3_standoffs_m3_standsoffs" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

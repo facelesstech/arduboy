@@ -1,0 +1,434 @@
+EESchema Schematic File Version 4
+LIBS:arduboy_with_flashcart_port_smd-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L promicro:ProMicro U3
+U 1 1 5CD6FD88
+P 5300 3550
+F 0 "U3" H 5300 4587 60  0000 C CNN
+F 1 "ProMicro" H 5300 4481 60  0000 C CNN
+F 2 "promicro:ProMicro_smd_pads" H 5400 2500 60  0001 C CNN
+F 3 "" H 5400 2500 60  0000 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ssd1306:ssd1306 U4
+U 1 1 5CD700A5
+P 7200 3800
+F 0 "U4" V 7154 4328 50  0000 L CNN
+F 1 "ssd1306" V 7245 4328 50  0000 L CNN
+F 2 "screens:SSD1306_oled_screen" H 7350 3600 50  0001 C CNN
+F 3 "" H 7350 3600 50  0001 C CNN
+	1    7200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3500 6100 3100
+Wire Wire Line
+	6100 3100 6000 3100
+Wire Wire Line
+	6000 3600 6100 3600
+Wire Wire Line
+	6000 2900 6200 2900
+Wire Wire Line
+	4600 3600 4550 3600
+Wire Wire Line
+	4550 3600 4550 4050
+Wire Wire Line
+	4600 3400 4500 3400
+Wire Wire Line
+	4500 3400 4500 4100
+Connection ~ 6200 2900
+Wire Wire Line
+	6100 3100 6100 2450
+Connection ~ 6100 3100
+Wire Wire Line
+	6200 2400 6200 2900
+Wire Wire Line
+	4250 3200 4600 3200
+Wire Wire Line
+	4300 4150 6100 4150
+Wire Wire Line
+	4200 4200 6150 4200
+Wire Wire Line
+	6150 4200 6150 3800
+Wire Wire Line
+	6150 3800 6000 3800
+Wire Wire Line
+	6000 3700 6050 3700
+Connection ~ 6100 3600
+Wire Wire Line
+	6100 3600 6100 4150
+Wire Wire Line
+	6050 3700 6050 4250
+Wire Wire Line
+	6050 4250 4150 4250
+$Comp
+L Device:Speaker LS1
+U 1 1 5CD88073
+P 2950 3950
+F 0 "LS1" H 2915 3533 50  0000 C CNN
+F 1 "Speaker" H 2915 3624 50  0000 C CNN
+F 2 "speakers:piezo_smd" H 2950 3750 50  0001 C CNN
+F 3 "~" H 2940 3900 50  0001 C CNN
+	1    2950 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3500 3850 3500
+Connection ~ 4350 2400
+Wire Wire Line
+	4350 2400 6200 2400
+$Comp
+L Switch:SW_Push_SPDT SW1
+U 1 1 5CD8B4D8
+P 3350 3850
+F 0 "SW1" H 3350 4135 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 3350 4044 50  0000 C CNN
+F 2 "buttons_custom:tiny_smd_slide_switch_custom" H 3350 3850 50  0001 C CNN
+F 3 "" H 3350 3850 50  0001 C CNN
+	1    3350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3750 3850 3750
+Wire Wire Line
+	3850 3750 3850 3500
+Wire Wire Line
+	4350 4050 3150 4050
+Wire Wire Line
+	3150 4050 3150 3950
+Wire Wire Line
+	4350 2400 4350 4050
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5CD8EE64
+P 4600 4900
+F 0 "SW3" H 4600 5185 50  0000 C CNN
+F 1 "SW_Push" H 4600 5094 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5CD8EEE1
+P 4600 5500
+F 0 "SW4" H 4600 5785 50  0000 C CNN
+F 1 "SW_Push" H 4600 5694 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 4600 5700 50  0001 C CNN
+F 3 "" H 4600 5700 50  0001 C CNN
+	1    4600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CD8EF53
+P 4250 5200
+F 0 "SW2" H 4250 5485 50  0000 C CNN
+F 1 "SW_Push" H 4250 5394 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 4250 5400 50  0001 C CNN
+F 3 "" H 4250 5400 50  0001 C CNN
+	1    4250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5CD8EF8F
+P 4950 5200
+F 0 "SW5" H 4950 5485 50  0000 C CNN
+F 1 "SW_Push" H 4950 5394 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 4950 5400 50  0001 C CNN
+F 3 "" H 4950 5400 50  0001 C CNN
+	1    4950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5CD8EFD1
+P 5550 5400
+F 0 "SW6" H 5550 5685 50  0000 C CNN
+F 1 "SW_Push" H 5550 5594 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 5550 5600 50  0001 C CNN
+F 3 "" H 5550 5600 50  0001 C CNN
+	1    5550 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5CD8F01F
+P 6100 5150
+F 0 "SW7" H 6100 5435 50  0000 C CNN
+F 1 "SW_Push" H 6100 5344 50  0000 C CNN
+F 2 "buttons_custom:smd_soft_custom" H 6100 5350 50  0001 C CNN
+F 3 "" H 6100 5350 50  0001 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3500 7000 2900
+Wire Wire Line
+	7000 2900 6700 2900
+Wire Wire Line
+	6950 4100 6950 3600
+Wire Wire Line
+	6950 3600 7000 3600
+Wire Wire Line
+	4500 4100 6950 4100
+Wire Wire Line
+	6900 4050 6900 3700
+Wire Wire Line
+	6900 3700 7000 3700
+Wire Wire Line
+	4550 4050 6900 4050
+Wire Wire Line
+	6800 3600 6800 3900
+Wire Wire Line
+	6800 3900 7000 3900
+Wire Wire Line
+	6750 3500 6750 4000
+Wire Wire Line
+	6750 4000 7000 4000
+Wire Wire Line
+	6100 3500 6750 3500
+Wire Wire Line
+	7000 4100 7000 4150
+Wire Wire Line
+	7000 4150 6700 4150
+Wire Wire Line
+	6700 4150 6700 2900
+Connection ~ 6700 2900
+Wire Wire Line
+	6700 2900 6200 2900
+Wire Wire Line
+	6000 3500 6050 3500
+Wire Wire Line
+	6050 3500 6050 3450
+Wire Wire Line
+	6050 3450 6250 3450
+Wire Wire Line
+	6250 3450 6250 4900
+Wire Wire Line
+	6250 4900 4800 4900
+Wire Wire Line
+	4450 5200 4450 4950
+Wire Wire Line
+	4450 4950 6350 4950
+Wire Wire Line
+	6350 4950 6350 3300
+Wire Wire Line
+	6350 3300 6000 3300
+Wire Wire Line
+	6400 3200 6400 5500
+Wire Wire Line
+	6400 5500 4800 5500
+Wire Wire Line
+	6000 3200 6400 3200
+Wire Wire Line
+	5150 5200 5200 5200
+Wire Wire Line
+	5200 5200 5200 5000
+Wire Wire Line
+	5200 5000 6300 5000
+Wire Wire Line
+	6300 5000 6300 3400
+Wire Wire Line
+	6300 3400 6000 3400
+Wire Wire Line
+	6300 5150 6300 5050
+Wire Wire Line
+	6300 5050 4100 5050
+Wire Wire Line
+	4100 5050 4100 3700
+Wire Wire Line
+	4100 3700 4600 3700
+Wire Wire Line
+	4600 3800 4050 3800
+Wire Wire Line
+	4050 3800 4050 5050
+Wire Wire Line
+	4050 5050 4000 5050
+Wire Wire Line
+	4000 5050 4000 5550
+Wire Wire Line
+	4000 5550 5750 5550
+Wire Wire Line
+	5750 5550 5750 5400
+Wire Wire Line
+	7000 2900 7200 2900
+Wire Wire Line
+	8250 2900 8250 5750
+Wire Wire Line
+	4050 5750 4050 5200
+Connection ~ 7000 2900
+Wire Wire Line
+	4400 5500 4400 5750
+Connection ~ 4400 5750
+Wire Wire Line
+	4400 5750 4050 5750
+Wire Wire Line
+	4400 4900 3950 4900
+Wire Wire Line
+	3950 4900 3950 5750
+Wire Wire Line
+	3950 5750 4050 5750
+Connection ~ 4050 5750
+Wire Wire Line
+	4750 5200 4750 5750
+Wire Wire Line
+	4400 5750 4750 5750
+Connection ~ 4750 5750
+Wire Wire Line
+	4750 5750 5350 5750
+Wire Wire Line
+	5350 5400 5350 5750
+Connection ~ 5350 5750
+Wire Wire Line
+	5350 5750 5900 5750
+Wire Wire Line
+	5900 5150 5900 5750
+Connection ~ 5900 5750
+Wire Wire Line
+	5900 5750 8250 5750
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5CDC1B45
+P 6400 2400
+F 0 "SW8" H 6400 2215 50  0000 C CNN
+F 1 "SW_Push" H 6400 2306 50  0000 C CNN
+F 2 "buttons_custom:SMD_2pin_button_custom" H 6400 2600 50  0001 C CNN
+F 3 "" H 6400 2600 50  0001 C CNN
+	1    6400 2400
+	-1   0    0    1   
+$EndComp
+Connection ~ 6200 2400
+Wire Wire Line
+	6600 2400 6600 3000
+Wire Wire Line
+	6600 3000 6000 3000
+$Comp
+L arduboy_flashcart_header_custom:arduboy_flashcart_header_custom U1
+U 1 1 5CE35D7F
+P 3750 3050
+F 0 "U1" V 4215 3144 50  0000 C CNN
+F 1 "arduboy_flashcart_header_custom" V 4124 3144 50  0000 C CNN
+F 2 "arduboy_flashcart_port:arduboy_flashcart_port_flashcart_outline" H 3750 3050 50  0001 C CNN
+F 3 "" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2450 4000 3300
+Wire Wire Line
+	4000 3300 3900 3300
+Wire Wire Line
+	4000 2450 6100 2450
+Wire Wire Line
+	4050 2400 4050 3200
+Wire Wire Line
+	4050 3200 3900 3200
+Wire Wire Line
+	4050 2400 4350 2400
+Wire Wire Line
+	3900 3100 4250 3100
+Wire Wire Line
+	4250 3100 4250 3200
+Wire Wire Line
+	4300 3000 3900 3000
+Wire Wire Line
+	4300 3000 4300 4150
+Wire Wire Line
+	4200 2900 3900 2900
+Wire Wire Line
+	4200 2900 4200 4200
+Wire Wire Line
+	4150 2800 3900 2800
+Wire Wire Line
+	4150 2800 4150 4250
+Wire Wire Line
+	6100 3600 6800 3600
+Connection ~ 6150 3800
+Wire Wire Line
+	6150 3800 7000 3800
+$Comp
+L m3_standoffs:m3_standsoffs U2
+U 1 1 5CE49055
+P 4500 1250
+F 0 "U2" H 4558 1285 50  0000 L CNN
+F 1 "m3_standsoffs" H 4558 1194 50  0000 L CNN
+F 2 "m3_hole_custom:m3_hole_custom" H 4500 1250 50  0001 C CNN
+F 3 "" H 4500 1250 50  0001 C CNN
+	1    4500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L m3_standoffs:m3_standsoffs U5
+U 1 1 5CE4911B
+P 4500 1450
+F 0 "U5" H 4558 1485 50  0000 L CNN
+F 1 "m3_standsoffs" H 4558 1394 50  0000 L CNN
+F 2 "m3_hole_custom:m3_hole_custom" H 4500 1450 50  0001 C CNN
+F 3 "" H 4500 1450 50  0001 C CNN
+	1    4500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L m3_standoffs:m3_standsoffs U6
+U 1 1 5CE49171
+P 4500 1650
+F 0 "U6" H 4558 1685 50  0000 L CNN
+F 1 "m3_standsoffs" H 4558 1594 50  0000 L CNN
+F 2 "m3_hole_custom:m3_hole_custom" H 4500 1650 50  0001 C CNN
+F 3 "" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L m3_standoffs:m3_standsoffs U7
+U 1 1 5CE491A3
+P 4500 1850
+F 0 "U7" H 4558 1885 50  0000 L CNN
+F 1 "m3_standsoffs" H 4558 1794 50  0000 L CNN
+F 2 "m3_hole_custom:m3_hole_custom" H 4500 1850 50  0001 C CNN
+F 3 "" H 4500 1850 50  0001 C CNN
+	1    4500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L battery_custom:battery_custom U8
+U 1 1 5CE4C8F0
+P 7300 3150
+F 0 "U8" V 7249 3428 50  0000 L CNN
+F 1 "battery_custom" V 7340 3428 50  0000 L CNN
+F 2 "battery_connector_custom:battery_connector_custom" H 7300 3150 50  0001 C CNN
+F 3 "" H 7300 3150 50  0001 C CNN
+	1    7300 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3200 6500 3200
+Wire Wire Line
+	6500 3200 6500 3100
+Wire Wire Line
+	6500 3100 6100 3100
+Wire Wire Line
+	7200 2900 7200 3100
+Connection ~ 7200 2900
+Wire Wire Line
+	7200 2900 8250 2900
+$EndSCHEMATC
